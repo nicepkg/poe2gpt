@@ -29,6 +29,9 @@ jobs:
       - name: Test
         run: npm run test
 
+      - name: Build
+        run: npm run build
+
       - name: Publish
         run: npm publish --access public --no-git-checks
         env:
