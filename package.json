@@ -2,7 +2,7 @@
   "name": "poe2gpt",
   "publisher": "nicepkg",
   "description": "🔑 Unimpeded: Convert Poe.com to OpenAI Interface-Compatible Format! 畅通无阻: 将 Poe.com 转换为 OpenAI 接口兼容格式!",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "author": "Nicepkg <2214962083@qq.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/2214962083",
