@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.4...poe2gpt-v0.2.5) (2024-08-17)
+
+
+### Bug Fixes
+
+* try fix ci ([9d24d70](https://github.com/nicepkg/poe2gpt/commit/9d24d701bef0d05d40dfe900849d91ed0f9b9659))
+
 ## [0.2.4](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.3...poe2gpt-v0.2.4) (2024-08-17)
 
 
