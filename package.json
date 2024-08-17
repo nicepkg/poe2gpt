@@ -38,6 +38,11 @@
   "bin": {
     "poe2gpt": "dist/cli.js"
   },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "*.md"
+  ],
   "scripts": {
     "build": "tsup",
     "commit": "git add . && cz",
