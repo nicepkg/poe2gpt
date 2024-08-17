@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  release:
+    permissions:
+      id-token: write
+      contents: write
+    if: "contains(github.event.head_commit.message, 'chore: release')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js v20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: https://registry.npmjs.org/
+          cache: npm
+
+      - run: npm install
+
+      - name: Test
+        run: npm run test
+
+      - name: Publish
+        run: npm publish --access public --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_CONFIG_PROVENANCE: true
+
+      - name: Git commit
+        id: commit
+        run: |
+          git config --local user.email github-actions[bot]@users.noreply.github.com
+          git config --local user.name github-actions[bot]
+          git config --global core.autocrlf true
+          git config --global core.safecrlf false
+          git add .
+          git commit -m "chore: ci build" -a
+        continue-on-error: true
+
+      - name: Git push
+        uses: ad-m/github-push-action@master
+        if: ${{ steps.commit.outcome == 'success' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Log
+        if: ${{ steps.commit.outcome != 'success' }}
+        run: echo Nothing to commit.
