@@ -4,7 +4,8 @@
 
 English / [简体中文](https://github.com/nicepkg/poe2gpt/tree/master/README_CN.md)
 
-🔑 Unimpeded: Convert Poe.com to OpenAI Interface-Compatible Format! 畅通无阻: 将 Poe.com 转换为 OpenAI 接口兼容格式!
+🔑 Unimpeded: Convert Poe.com to OpenAI Interface-Compatible Format!
+🔑 畅通无阻: 将 Poe.com 转换为 OpenAI 接口兼容格式!
 
 [![Version](https://img.shields.io/npm/v/poe2gpt)](https://www.npmjs.com/package/poe2gpt)
 [![Downloads](https://img.shields.io/npm/dm/poe2gpt)](https://www.npmjs.com/package/poe2gpt)
