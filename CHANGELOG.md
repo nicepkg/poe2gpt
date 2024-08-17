@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.2...poe2gpt-v0.2.3) (2024-08-17)
+
+
+### Bug Fixes
+
+* fix package.json ([8e0232f](https://github.com/nicepkg/poe2gpt/commit/8e0232fbd9c6fd50096a43ee72b06c27ec08a766))
+
 ## [0.2.2](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.1...poe2gpt-v0.2.2) (2024-08-17)
 
 
