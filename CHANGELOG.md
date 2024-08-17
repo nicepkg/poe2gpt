@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.8](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.7...poe2gpt-v0.2.8) (2024-08-17)
+
+
+### Bug Fixes
+
+* fix cli not working ([9105f67](https://github.com/nicepkg/poe2gpt/commit/9105f6728df352737226fe00af5aad9aa0c16eb5))
+
 ## [0.2.7](https://github.com/nicepkg/poe2gpt/compare/poe2gpt-v0.2.6...poe2gpt-v0.2.7) (2024-08-17)
 
 
