@@ -6,13 +6,13 @@
   "author": "Nicepkg <2214962083@qq.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/2214962083",
-  "homepage": "https://github.com/nicepkg/poe2openai#readme",
+  "homepage": "https://github.com/nicepkg/poe2gpt#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicepkg/poe2openai.git"
+    "url": "git+https://github.com/nicepkg/poe2gpt.git"
   },
   "bugs": {
-    "url": "https://github.com/nicepkg/poe2openai/issues"
+    "url": "https://github.com/nicepkg/poe2gpt/issues"
   },
   "sponsor": {
     "url": "https://github.com/sponsors/2214962083"
