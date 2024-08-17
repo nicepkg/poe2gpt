@@ -9,7 +9,7 @@
   "homepage": "https://github.com/nicepkg/poe2openai#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicepkg/poe2openai"
+    "url": "git+https://github.com/nicepkg/poe2openai.git"
   },
   "bugs": {
     "url": "https://github.com/nicepkg/poe2openai/issues"
@@ -36,13 +36,12 @@
   ],
   "main": "./dist/index.js",
   "bin": {
-    "poe2gpt": "./dist/cli.js"
+    "poe2gpt": "dist/cli.js"
   },
   "scripts": {
     "build": "tsup",
     "commit": "git add . && cz",
     "dev": "esno ./src/dev.ts",
-    "publish": "esno ./scripts/publish.ts",
     "prepare": "husky",
     "test": "tsc --noEmit"
   },
