@@ -42,12 +42,16 @@ export function setupConfig(initConfig?: Partial<Config>): void {
     config = { ...config, ...initConfig };
   }
 
-  if (config.port === 0) {
-    config.port = 3700;
+  config.port ??= 3700;
+  config.rateLimit ??= 60;
+  config.coolDown ??= 3;
+  config.timeout ??= 180;
+  config.simulateRoles ??= 2;
+
+  if (!config?.accessTokens?.length) {
+    config.accessTokens = [];
   }
-  if (config.rateLimit === 0) {
-    config.rateLimit = 10;
-  }
+
   if (!config.bot) {
     config.bot = {
       "gpt-3.5-turbo-16k": "ChatGPT-16k",
