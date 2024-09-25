@@ -27,6 +27,7 @@ const bot_names = new Set([
   "Gemini-1.5-Pro-1M",
   "DALL-E-3",
   "StableDiffusionXL",
+  "Web-Search",
 ]);
 
 async function get_responses(
